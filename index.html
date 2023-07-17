@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -21,23 +22,23 @@
 <body>
 
     <div id="main">
-        <header id="header">
+        <header>
             <div class="w-100">
-                <div class="container header-top d-flex">
-                    <div class="header-top__left h-100 d-flex align-items-center">
+                <div class="header__top container d-flex">
+                    <div class="header__top__left h-100 d-flex align-items-center">
                         <img class="h-75" src="https://motchill.info/motchill.png?v1.0.2" alt="logo">
                     </div>
-                    <div class="header-top__right w-100 d-flex justify-content-between">
-                        <div class="search-container align-self-center">
+                    <div class="header__top__right w-100 d-flex justify-content-between">
+                        <div class="header__search__container align-self-center">
                             <form action="" method="get" class="position-relative">
                                 <input type="text" placeholder="V.d: tên phim, tên diễn viên,...">
                                 <i class="fa-solid fa-magnifying-glass position-absolute"></i>
                             </form>
-                            <div class="sugget-dnss">
+                            <span>
                                 Công cụ tìm kiếm phim
-                            </div>
+                            </span>
                         </div>
-                        <div class="box-user-menu">
+                        <div class="header__user__menu">
                             <ul class="d-flex">
                                 <li>
                                     <span><i class="fa-solid fa-right-to-bracket"></i></span>
@@ -55,37 +56,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-menu">
+                <div class="header__menu">
                     <ul
-                        class="container header-menu-main text-uppercase d-flex justify-content-between align-item-center h-100">
-                        <li class="menu-main__item csp">trang chủ</li>
-                        <li class="menu-main__item csp">thể loại</li>
-                        <li class="menu-main__item csp">quốc gia</li>
-                        <li class="menu-main__item csp">phim mới</li>
-                        <li class="menu-main__item csp">phim bộ</li>
-                        <li class="menu-main__item csp">phim lẻ</li>
-                        <li class="menu-main__item csp">phim thuyết minh</li>
-                        <li class="menu-main__item csp">phim chiếu rạp</li>
-                        <li class="menu-main__item csp">tv show</li>
+                        class="container header__menu__list text-uppercase d-flex justify-content-between align-item-center h-100">
+                        <li class="menu__main__item csp"><a href="#">trang chủ</a></li>
+                        <li class="menu__main__item csp"><a href="#">thể loại</a></li>
+                        <li class="menu__main__item csp"><a href="#">quốc gia</a></li>
+                        <li class="menu__main__item csp"><a href="#">phim mới</a></li>
+                        <li class="menu__main__item csp"><a href="#">phim bộ</a></li>
+                        <li class="menu__main__item csp"><a href="#">phim lẻ</a></li>
+                        <li class="menu__main__item csp"><a href="#">phim thuyết minh</a></li>
+                        <li class="menu__main__item csp"><a href="#">phim chiếu rạp</a></li>
+                        <li class="menu__main__item csp"><a href="#">tv show</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <section id="content">
-            <div id="top-banner">
+            <div class="content__banner">
                 <div class="container d-flex justify-content-center">
                     <img class="mx-auto csp"
                         src="https://ax.mpapis.xyz/motchill/uploads/df65b2d9bb8db8adb757c70dcb5c59d2.gif"
                         alt="topbanner">
                 </div>
             </div>
-            <div class="main-content">
-                <div class="list-films container">
-                    <p class="title text-uppercase">
+            <div class="content__main">
+                <div class="list__films container">
+                    <h1 class="title text-uppercase">
                         Phim hot
-                    </p>
-                    <div class="list-films-container row justify-content-between">
-                        <div class="list-films-item col position-relative">
+                    </h1>
+                    <div class="list__container row justify-content-between">
+                        <div class="list__container__item col position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
@@ -97,61 +98,65 @@
                                     alt="">
                             </a>
                         </div>
-                        <div class="list-films-item col position-relative">
+                        <div class="list__container__item col position-relative">
                             <span class="position-absolute z-3">
-                                Tập 18 Vietsub
+                                Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
-                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Người nổi tiếng</div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/2ZpnRyd/nguoi-noi-tieng.jpg?1688186897"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="list-films-item col position-relative">
-                            <span class="position-absolute z-3">
-                                Tập 18 Vietsub
-                            </span>
-                            <i class="icon-play z-3"></i>
-                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn</div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="list-films-item col position-relative">
-                            <span class="position-absolute z-3">
-                                Tập 18 Vietsub
-                            </span>
-                            <i class="icon-play z-3"></i>
-                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh Chủ
+                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
                             <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
+                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
                                     alt="">
                             </a>
                         </div>
-                        <div class="list-films-item col position-relative">
+                        <div class="list__container__item col position-relative">
                             <span class="position-absolute z-3">
-                                Tập 18 Vietsub
+                                Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
-                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Ngọc Cốt Dao</div>
+                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
+                            </div>
                             <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/poster/ngoc-cot-dao-10296.jpg?1689071581"
+                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
                                     alt="">
                             </a>
                         </div>
+                        <div class="list__container__item col position-relative">
+                            <span class="position-absolute z-3">
+                                Full 5/5 Vietsub
+                            </span>
+                            <i class="icon-play z-3"></i>
+                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
+                            </div>
+                            <a href="#">
+                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="list__container__item col position-relative">
+                            <span class="position-absolute z-3">
+                                Full 5/5 Vietsub
+                            </span>
+                            <i class="icon-play z-3"></i>
+                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
+                            </div>
+                            <a href="#">
+                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
+                                    alt="">
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="content-films row container">
-                    <div class="content-films-left col-8">
-                        <div class="list-films">
-                            <p class="title text-uppercase">
+                <div class="content__films row container">
+                    <div class="content__films__left col-8">
+                        <div class="list__films">
+                            <h1 class="title text-uppercase">
                                 Phim bộ mới cập nhật
-                            </p>
-                            <div class="list-films-container row">
-                                <div class="list-films-item col-3 position-relative">
+                            </h1>
+                            <div class="list__container row">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Full 5/5 Vietsub
                                     </span>
@@ -163,128 +168,138 @@
                                             src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Người nổi
-                                        tiếng</div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/2ZpnRyd/nguoi-noi-tieng.jpg?1688186897" alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
-                                    </div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
-                                        Chủ</div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
-                                    </div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
-                                        Chủ</div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
-                                    </div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
-                                        Chủ</div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
-                                    </div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
-                                        Tập 18 Vietsub
+                                        Full 5/5 Vietsub
                                     </span>
                                     <i class="icon-play z-3"></i>
-                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
-                                        Chủ</div>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
                                     <a href="#">
                                         <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
+                                <div class="list__container__item col-3 position-relative">
+                                    <span class="position-absolute z-3">
+                                        Full 5/5 Vietsub
+                                    </span>
+                                    <i class="icon-play z-3"></i>
+                                    <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
+                                        đường</div>
+                                    <a href="#">
+                                        <img class="w-100"
+                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                    </a>
+                                </div>
+
+                                
                             </div>
                         </div>
 
                         <!-- phim hoat hình -->
-                        <div class="list-films">
-                            <p class="title text-uppercase">
+                        <div class="list__films">
+                            <h1 class="title text-uppercase">
                                 Phim hoạt hình
-                            </p>
-                            <div class="list-films-container row">
-                                <div class="list-films-item col-3 position-relative">
+                            </h1>
+                            <div class="list__container row">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Full 5/5 Vietsub
                                     </span>
@@ -296,7 +311,7 @@
                                             src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -308,7 +323,7 @@
                                             src="https://i.mpcdn.top/c/2ZpnRyd/nguoi-noi-tieng.jpg?1688186897" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -320,7 +335,7 @@
                                             src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -333,7 +348,7 @@
                                             alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -345,7 +360,7 @@
                                             src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -358,7 +373,7 @@
                                             alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -370,7 +385,7 @@
                                             src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -383,7 +398,7 @@
                                             alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -395,7 +410,7 @@
                                             src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
                                     </a>
                                 </div>
-                                <div class="list-films-item col-3 position-relative">
+                                <div class="list__container__item col-3 position-relative">
                                     <span class="position-absolute z-3">
                                         Tập 18 Vietsub
                                     </span>
@@ -411,23 +426,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-films-right col-4">
-                        <div class="content-right__trailer">
-                            <p class="title text-uppercase">
+                    <div class="content__films__right col-4">
+                        <div class="content__right__trailer">
+                            <h1 class="title text-uppercase">
                                 Phim sắp chiếu
-                            </p>
-                            <ul class="trailer-box">
-                                <li class="trailer-box-item d-flex ">
-                                    <div class="trailer-item-avatar">
+                            </h1>
+                            <ul class="content__trailer">
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
                                         <img class="object-fit-cover csp"
                                             src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
                                             alt="f1">
                                     </div>
-                                    <div class="trailer-item-desc">
-                                        <div class="trailer-item-desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
-                                        <div class="trailer-item-desc__date">2023</div>
-                                        <div class="trailer-item-desc__rate">
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="1">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="2">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="3">
@@ -436,34 +451,17 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="trailer-box-item d-flex ">
-                                    <div class="trailer-item-avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thao-thiet-ky-11101.jpg?1679919954"
-                                            alt="f2">
-                                    </div>
-                                    <div class="trailer-item-desc">
-                                        <div class="trailer-item-desc__title fw-bold csp">Thao Thiết Ký</div>
-                                        <div class="trailer-item-desc__date">2023</div>
-                                        <div class="trailer-item-desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="trailer-box-item d-flex ">
-                                    <div class="trailer-item-avatar">
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
                                         <img class="object-fit-cover csp"
                                             src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f3">
+                                            alt="f1">
                                     </div>
-                                    <div class="trailer-item-desc">
-                                        <div class="trailer-item-desc__title fw-bold csp">Tân Thần Điêu Đại Hiệp</div>
-                                        <div class="trailer-item-desc__date">2023</div>
-                                        <div class="trailer-item-desc__rate">
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                        </div>
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="1">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="2">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="3">
@@ -472,17 +470,17 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="trailer-box-item d-flex ">
-                                    <div class="trailer-item-avatar">
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
                                         <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thao-thiet-ky-11101.jpg?1679919954"
-                                            alt="f4">
+                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
+                                            alt="f1">
                                     </div>
-                                    <div class="trailer-item-desc">
-                                        <div class="trailer-item-desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
-                                        <div class="trailer-item-desc__date">2023</div>
-                                        <div class="trailer-item-desc__rate">
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="1">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="2">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="3">
@@ -491,16 +489,17 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="trailer-box-item d-flex ">
-                                    <div class="trailer-item-avatar">
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
                                         <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/tan-than-dieu-dai-hiep-6426.jpg?1632385998"
-                                            alt="f5">
+                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
+                                            alt="f1">
                                     </div>
-                                    <div class="trailer-item-desc">
-                                        <div class="trailer-item-desc__title fw-bold csp">Tân Thần Điêu Đại Hiệp</div>
-                                        <div class="trailer-item-desc__date">2023</div>
-                                        <div class="trailer-item-desc__rate">
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                        </div>
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="1">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="2">
                                             <img src="https://motchill.info/theme/images/star-on.png" alt="3">
@@ -509,9 +508,48 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
+                                        <img class="object-fit-cover csp"
+                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
+                                            alt="f1">
+                                    </div>
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                        </div>
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content__trailer__item d-flex ">
+                                    <div class="trailer__item__avatar">
+                                        <img class="object-fit-cover csp"
+                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
+                                            alt="f1">
+                                    </div>
+                                    <div class="trailer__item__desc">
+                                        <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
+                                        </div>
+                                        <div class="trailer__item__desc__date">2023</div>
+                                        <div class="trailer__item__desc__rate">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
+                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                        </div>
+                                    </div>
+                                </li>
+                                
                             </ul>
                         </div>
-                        <div class="content-right__trending">
+                        <div class="content__right__trending">
                             <p class="title text-uppercase">
                                 Trending
                             </p>
@@ -526,82 +564,91 @@
                                     <p>Thang</p>
                                 </div>
                             </div>
-                            <ul class="list-films">
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
+                            <ul class="list__films">
+                                <li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
                                         <p>1</p>
                                     </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
                                             <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
                                         </div>
-                                        <div class="list-desc-views">
+                                        <div class="list__desc__views">
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
-                                        <p>2</p>
+                                <li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
                                     </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
-                                            <p class="fw-bold">Khách Sạn Vương Giả</p>
-                                        </div>
-                                        <div class="list-desc-views">
-                                            <p>782 luot quan tam</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
-                                        <p>3</p>
-                                    </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
                                             <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
                                         </div>
-                                        <div class="list-desc-views">
+                                        <div class="list__desc__views">
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
-                                        <p>4</p>
+                                </li><li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
                                     </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
                                             <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
                                         </div>
-                                        <div class="list-desc-views">
+                                        <div class="list__desc__views">
+                                            <p>782 luot quan tam</p>
+                                        </div>
+                                    </div>
+                                </li><li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
+                                            <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
+                                        </div>
+                                        <div class="list__desc__views">
+                                            <p>782 luot quan tam</p>
+                                        </div>
+                                    </div>
+                                </li><li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
+                                            <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
+                                        </div>
+                                        <div class="list__desc__views">
+                                            <p>782 luot quan tam</p>
+                                        </div>
+                                    </div>
+                                </li><li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
+                                            <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
+                                        </div>
+                                        <div class="list__desc__views">
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
-                                        <p>5</p>
+                                <li class="list__container__item text-white d-flex">
+                                    <div class="list__number center-item">
+                                        <p>1</p>
                                     </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
-                                            <p class="fw-bold">Khói Lửa Nhân Gian</p>
+                                    <div class="list__desc">
+                                        <div class="list__desc-title">
+                                            <p class="fw-bold">Khi Anh Chạy Về Phía Em</p>
                                         </div>
-                                        <div class="list-desc-views">
-                                            <p>1012 luot quan tam</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-films-item text-white d-flex">
-                                    <div class="list-number center-item">
-                                        <p>6</p>
-                                    </div>
-                                    <div class="list-desc">
-                                        <div class="list-desc-title">
-                                            <p class="fw-bold">Người Nổi Tiếng</p>
-                                        </div>
-                                        <div class="list-desc-views">
-                                            <p>334 luot quan tam</p>
+                                        <div class="list__desc__views">
+                                            <p>782 luot quan tam</p>
                                         </div>
                                     </div>
                                 </li>
