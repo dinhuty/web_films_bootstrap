@@ -24,12 +24,12 @@
     <div id="main">
         <header>
             <div class="w-100">
-                <div class="header__top container d-flex">
+                <div class="header__top container d-flex justify-content-between">
                     <div class="header__top__left h-100 d-flex align-items-center">
-                        <img class="h-75" src="https://motchill.info/motchill.png?v1.0.2" alt="logo">
+                        <img class="h-75" src="./assets//image/logo.png" alt="logo">
                     </div>
                     <div class="header__top__right w-100 d-flex justify-content-between">
-                        <div class="header__search__container align-self-center">
+                        <div class="header__search__container align-self-center d-none d-lg-block">
                             <form action="" method="get" class="position-relative">
                                 <input type="text" placeholder="V.d: tên phim, tên diễn viên,...">
                                 <i class="fa-solid fa-magnifying-glass position-absolute"></i>
@@ -38,7 +38,7 @@
                                 Công cụ tìm kiếm phim
                             </span>
                         </div>
-                        <div class="header__user__menu">
+                        <div class="header__user__menu d-none d-lg-block">
                             <ul class="d-flex">
                                 <li>
                                     <span><i class="fa-solid fa-right-to-bracket"></i></span>
@@ -54,9 +54,13 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="header__user__menu--sub d-lg-none">
+                            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="header__menu">
+                <div class="header__menu d-none d-lg-block">
                     <ul
                         class="container header__menu__list text-uppercase d-flex justify-content-between align-item-center h-100">
                         <li class="menu__main__item csp"><a href="#">trang chủ</a></li>
@@ -72,12 +76,10 @@
                 </div>
             </div>
         </header>
-        <section id="content">
-            <div class="content__banner">
-                <div class="container d-flex justify-content-center">
-                    <img class="mx-auto csp"
-                        src="https://ax.mpapis.xyz/motchill/uploads/df65b2d9bb8db8adb757c70dcb5c59d2.gif"
-                        alt="topbanner">
+        <section id="content" class="container">
+            <div class="content__banner w-100">
+                <div class="container d-flex justify-content-center w-100">
+                    <img class="mx-auto csp img-fluid" src="./assets/image/banner.gif" alt="topbanner">
                 </div>
             </div>
             <div class="content__main">
@@ -85,72 +87,78 @@
                     <h1 class="title text-uppercase">
                         Phim hot
                     </h1>
-                    <div class="list__container row justify-content-between">
-                        <div class="list__container__item col position-relative">
+                    <div class="list__container row w-100 ">
+                        <div class="list__container__item col-lg-2 col-md-4 col-sm-6 col-6 position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
                             <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
-                                    alt="">
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
                             </a>
                         </div>
-                        <div class="list__container__item col position-relative">
+                        <div class="list__container__item col-lg-2 col-md-4 col-sm-6 col-6 position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
                             <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
-                                    alt="">
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
                             </a>
                         </div>
-                        <div class="list__container__item col position-relative">
+                        <div class="list__container__item col-lg-2 col-md-4 col-sm-6 col-6 position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
                             <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
-                                    alt="">
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
                             </a>
                         </div>
-                        <div class="list__container__item col position-relative">
+                        <div class="list__container__item col-lg-2  col-md-4 col-sm-6 col-6 position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
                             <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
-                                    alt="">
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
                             </a>
                         </div>
-                        <div class="list__container__item col position-relative">
+                        <div class="list__container__item col-lg-2 col-md-4 col-sm-6 col-6 position-relative">
                             <span class="position-absolute z-3">
                                 Full 5/5 Vietsub
                             </span>
                             <i class="icon-play z-3"></i>
                             <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
                             </div>
-                            <a href="#">
-                                <img class="w-100" src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164"
-                                    alt="">
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
                             </a>
                         </div>
-                        
+                        <div class="list__container__item col-lg-2 col-md-4 col-sm-6 col-6 position-relative">
+                            <span class="position-absolute z-3">
+                                Full 5/5 Vietsub
+                            </span>
+                            <i class="icon-play z-3"></i>
+                            <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học đường
+                            </div>
+                            <a href="#" class="w-100">
+                                <img class="w-100" src="./assets/image/film1.jpg" alt="">
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="content__films row container">
-                    <div class="content__films__left col-8">
+                    <div class="content__films__left col-lg-8 col-12">
                         <div class="list__films">
                             <h1 class="title text-uppercase">
                                 Phim bộ mới cập nhật
@@ -164,8 +172,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -176,8 +183,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -188,8 +194,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -200,8 +205,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -212,8 +216,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -224,8 +227,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -236,8 +238,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -248,8 +249,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -260,8 +260,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -272,8 +271,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -284,16 +282,15 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
 
-                                
+
                             </div>
                         </div>
 
-                        <!-- phim hoat hình -->
+
                         <div class="list__films">
                             <h1 class="title text-uppercase">
                                 Phim hoạt hình
@@ -307,8 +304,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Chị đại học
                                         đường</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/AoE1Vwn/chi-dai-hoc-duong.jpg?1688181164" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -319,8 +315,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Người nổi
                                         tiếng</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/2ZpnRyd/nguoi-noi-tieng.jpg?1688186897" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -331,8 +326,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
                                     </div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -343,9 +337,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
                                         Chủ</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -356,8 +348,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
                                     </div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -368,9 +359,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
                                         Chủ</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -381,8 +370,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
                                     </div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -393,9 +381,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
                                         Chủ</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -406,8 +392,7 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Con số bí ẩn
                                     </div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/VYYgrNL/con-so-bi-mat.jpg?1688913649" alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="list__container__item col-3 position-relative">
@@ -418,15 +403,13 @@
                                     <div class="position-absolute text-center bottom-0 start-0 end-0 z-3">Tuyết Ưng Lĩnh
                                         Chủ</div>
                                     <a href="#">
-                                        <img class="w-100"
-                                            src="https://i.mpcdn.top/c/eNNYKyo/tuyet-ung-linh-chu.jpg?1688726619"
-                                            alt="">
+                                        <img class="w-100" src="./assets/image/film1.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content__films__right col-4">
+                    <div class="content__films__right col-4 d-none d-lg-block">
                         <div class="content__right__trailer">
                             <h1 class="title text-uppercase">
                                 Phim sắp chiếu
@@ -434,122 +417,110 @@
                             <ul class="content__trailer">
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="content__trailer__item d-flex ">
                                     <div class="trailer__item__avatar">
-                                        <img class="object-fit-cover csp"
-                                            src="https://i.mpcdn.top/poster/thanh-xuan-trong-chien-hoa-11179.jpg?1682357562"
-                                            alt="f1">
+                                        <img class="object-fit-cover csp" src="./assets/image/film1.jpg" alt="f1">
                                     </div>
                                     <div class="trailer__item__desc">
                                         <div class="trailer__item__desc__title fw-bold csp">Thanh Xuân Trong Chiến Hỏa
                                         </div>
                                         <div class="trailer__item__desc__date">2023</div>
                                         <div class="trailer__item__desc__rate">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="1">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="2">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="3">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="4">
-                                            <img src="https://motchill.info/theme/images/star-on.png" alt="5">
+                                            <img src="./assets/image/star.png" alt="1">
+                                            <img src="./assets/image/star.png" alt="2">
+                                            <img src="./assets/image/star.png" alt="3">
+                                            <img src="./assets/image/star.png" alt="4">
+                                            <img src="./assets/image/star.png" alt="5">
                                         </div>
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
-                        <div class="content__right__trending">
+                        <div class="content__right__trending d-none d-lg-block">
                             <p class="title text-uppercase">
                                 Trending
                             </p>
@@ -590,7 +561,8 @@
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
-                                </li><li class="list__container__item text-white d-flex">
+                                </li>
+                                <li class="list__container__item text-white d-flex">
                                     <div class="list__number center-item">
                                         <p>1</p>
                                     </div>
@@ -602,7 +574,8 @@
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
-                                </li><li class="list__container__item text-white d-flex">
+                                </li>
+                                <li class="list__container__item text-white d-flex">
                                     <div class="list__number center-item">
                                         <p>1</p>
                                     </div>
@@ -614,7 +587,8 @@
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
-                                </li><li class="list__container__item text-white d-flex">
+                                </li>
+                                <li class="list__container__item text-white d-flex">
                                     <div class="list__number center-item">
                                         <p>1</p>
                                     </div>
@@ -626,7 +600,8 @@
                                             <p>782 luot quan tam</p>
                                         </div>
                                     </div>
-                                </li><li class="list__container__item text-white d-flex">
+                                </li>
+                                <li class="list__container__item text-white d-flex">
                                     <div class="list__number center-item">
                                         <p>1</p>
                                     </div>
