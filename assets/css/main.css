@@ -125,6 +125,12 @@ header .header__menu .menu__main__item:hover {
     color: var(--text-color-highlight);
 }
 
+header .header__search__mobile i,
+header .header__user__menu--sub i {
+    font-size: 2rem;
+
+}
+
 /* content */
 
 .content__banner {
@@ -216,7 +222,7 @@ header .header__menu .menu__main__item:hover {
 }
 
 .content__films__left {
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 }
 
 
@@ -284,7 +290,7 @@ header .header__menu .menu__main__item:hover {
     background-color: #333;
 }
 
-.content__films__right .tabs .tab p {
+.content__films__right .tabs .tab span {
     margin-bottom: 0;
 }
 
@@ -304,7 +310,7 @@ header .header__menu .menu__main__item:hover {
     background-color: rgb(24 24 24);
 }
 
-.content__films__right .content__right__trending .list__number p {
+.content__films__right .content__right__trending .list__number span {
     width: 23px;
     height: 23px;
     line-height: 23px;
@@ -314,7 +320,7 @@ header .header__menu .menu__main__item:hover {
     background-color: var(--text-color-highlight);
 }
 
-.content__films__right .content-right__trending .list-desc-title p:hover {
+.content__films__right .content-right__trending .list-desc-title span:hover {
     color: var(--text-color-highlight);
     cursor: pointer;
 }
@@ -327,9 +333,12 @@ header .header__menu .menu__main__item:hover {
 
 /* 4.Footer */
 footer {
-    margin-top: 10rem;
+    margin-top: 5rem;
     color: #848484;
     background: #2d2d2d;
+}
+footer div{
+    margin: auto;
 }
 
 #footer>div>div {
@@ -346,4 +355,10 @@ footer .info .title {
 
 footer .info>div {
     padding: 0 1rem;
+}
+
+@media (max-width: 576px) {
+    header .header__top__left img{
+        height: 50% !important;
+    }
 }
